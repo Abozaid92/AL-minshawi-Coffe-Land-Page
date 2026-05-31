@@ -1102,16 +1102,16 @@ export default function App() {
     document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
   };
 
-  const openWhatsApp = () => {
-    const msg =
-      lang === "ar" ?
-        resources.ar.translation.whatsapp.ar
-      : resources.en.translation.whatsapp.en;
-    window.open(
-      `https://wa.me/201080761700?text=${encodeURIComponent(msg)}`,
-      "_blank",
-    );
-  };
+  // const openWhatsApp = () => {
+  //   const msg =
+  //     lang === "ar" ?
+  //       resources.ar.translation.whatsapp.ar
+  //     : resources.en.translation.whatsapp.en;
+  //   window.open(
+  //     `https://wa.me/201080761700?text=${encodeURIComponent(msg)}`,
+  //     "_blank",
+  //   );
+  // };
 
   const experienceItems = [
     {
@@ -2436,7 +2436,7 @@ export default function App() {
       {/* =========================================================
           FLOATING WHATSAPP BUTTON
       ========================================================= */}
-      <button
+      {/* <button
         onClick={openWhatsApp}
         className="fixed bottom-6 z-[90] p-4 rounded-full shadow-2xl transition-all duration-300 hover:scale-110 active:scale-95"
         style={{
@@ -2448,7 +2448,7 @@ export default function App() {
         title={t("buttons.whatsapp")}
       >
         <FaWhatsapp size={24} color="white" fill="white" />
-      </button>
+      </button> */}
 
       {/* =========================================================
           FLOATING AI CHAT BUTTON
